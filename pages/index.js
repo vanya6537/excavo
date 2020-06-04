@@ -1,210 +1,60 @@
-import Head from 'next/head'
 import Link from "next/link";
+import {SkipNavContent} from '@reach/skip-nav';
+import Container from "../components/container";
+import Page from '../components/page';
+import Footer from '../components/footer';
+import {ORG_NAME} from '../lib/constants';
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+export default function IndexPage() {
+    return (
+        <Page title={`Next.js by ${ORG_NAME} - The React Framework`}>
+            <Container>
+                <h1>HEY THERE</h1>
+                <p>
 
-      <main>
-        <h1 className="title">
-          Read <Link href="/posts/first-post"><a>this page!</a></Link>
-        </h1>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi odio, congue vel mi ac,
+                    efficitur tempor nisl. Vivamus et interdum lorem. Nam id augue ut tortor vulputate pellentesque.
+                    Curabitur eget placerat felis. Morbi dapibus mattis orci, eget pharetra ipsum cursus et. Ut aliquet
+                    lobortis sagittis. Suspendisse potenti.
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+                    Morbi vestibulum luctus ullamcorper. Mauris tristique erat diam, nec placerat velit consectetur non.
+                    Sed consectetur efficitur faucibus. Vivamus sapien dui, venenatis non tincidunt eget, ornare sit
+                    amet ipsum. Proin pulvinar nisl id ipsum accumsan auctor. Praesent consequat neque eu tortor
+                    eleifend tincidunt. Vestibulum ac nibh mollis libero lacinia ultrices vel vitae quam. Nullam quis
+                    efficitur massa, vel condimentum ante.
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+                    Quisque volutpat urna ac magna imperdiet vehicula. Duis a ex congue, congue mi et, varius nisi. Cras
+                    sed neque vitae libero pharetra lacinia. Proin interdum orci enim, sed consectetur magna accumsan
+                    ac. Pellentesque ultrices a felis volutpat pharetra. Quisque posuere, eros quis ultrices interdum,
+                    libero massa efficitur erat, aliquet maximus massa turpis vel quam. Nullam sed bibendum elit, a
+                    laoreet nibh. Curabitur sed dictum est. In pretium finibus diam in rutrum. Nulla placerat, mauris eu
+                    tristique viverra, enim enim euismod nisl, sed fringilla enim leo ac tellus. Nullam fringilla
+                    hendrerit molestie. Duis facilisis egestas leo a mollis. Praesent ut placerat tortor. Maecenas
+                    gravida laoreet massa eu congue.
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                    Quisque viverra mi a massa rutrum, ac laoreet enim pharetra. Nulla erat sem, sollicitudin ut arcu
+                    vitae, laoreet lacinia libero. Donec auctor quam purus, ac pulvinar dui vulputate id. Nunc rutrum,
+                    orci non venenatis malesuada, turpis ex aliquet lectus, nec auctor metus odio nec libero. Integer a
+                    arcu volutpat, tincidunt metus sed, mattis leo. Sed dictum massa semper facilisis volutpat. Nunc
+                    enim nulla, tempor id tincidunt id, vestibulum in enim. Praesent aliquet leo scelerisque urna
+                    laoreet, eget consequat augue commodo.
 
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                    Nunc sit amet dui sit amet magna iaculis aliquam nec quis enim. Nam rhoncus dui sit amet magna
+                    congue vulputate. Duis ut tristique massa. Vestibulum porttitor suscipit nisi. In lacinia, nibh vel
+                    feugiat luctus, nisl justo ullamcorper elit, nec gravida mi ante sit amet augue. Nam a pulvinar
+                    massa. Nunc eget sem mattis, pretium ex quis, tristique justo. Fusce lobortis lorem et nisl finibus
+                    faucibus. Sed viverra justo non nulla dignissim, sed hendrerit sapien tempor. Vivamus nec cursus
+                    leo. Maecenas dictum dui convallis augue viverra sollicitudin sed non augue. Etiam blandit mattis
+                    porta. Aenean scelerisque tempus nibh, in iaculis nulla bibendum a. Integer vitae lectus lacinia,
+                    pretium felis sit amet, feugiat ligula. Aenean ultricies, nulla sed pellentesque commodo, dolor quam
+                    auctor sem, vitae tristique libero lacus quis nulla. </p>
+                <Link href='posts/first-post'>HERE</Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+            </Container>
+            <Footer/>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
+        </Page>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+    )
 }
