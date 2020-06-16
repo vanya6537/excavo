@@ -7,7 +7,7 @@ import {ORG_NAME} from '../lib/constants';
 
 export default function IndexPage() {
     return (
-        <Page title={`Next.js by ${ORG_NAME} - The React Framework`}>
+        <Page title={`Next.js Showcase project by Netsl:)`} description={'Hey there!'}>
             <Container>
                 <h1>HEY THERE</h1>
                 <p>
