@@ -1,4 +1,4 @@
-import {memo, Component} from 'react';
+import {Component, memo} from 'react';
 import cn from 'classnames';
 import ClickOutside from './click-outside';
 import Button from './button';
@@ -97,7 +97,7 @@ class HeaderFeedback extends Component {
     }
 
     this.setState({loading: true}, () => {
-      fetch('https://api.nextjs.org/api/feedback', {
+      fetch('/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
