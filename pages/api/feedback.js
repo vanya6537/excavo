@@ -6,10 +6,7 @@ function sendMessage(token, chat_id, text) {
     const baseUrl = `https://api.telegram.org/bot${token}/sendMessage`
     const data = {chat_id, text}
     console.log(data)
-    axios
-        .get(baseUrl, data)
-        .then(resp => console.log(resp))
-        .catch(e => console.error(e))
+    axios.get(baseUrl, data)
 }
 
 export default (request, response) => {
