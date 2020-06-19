@@ -32,7 +32,7 @@ function Navbar() {
 
                     <div className="icons">
                         <a
-                            href="https://github.com/vercel/next.js"
+                            href="https://github.com/vanya6537/excavo"
                             aria-label="Next.js on GitHub"
                             rel="noopener noreferrer"
                             target="_blank"
@@ -176,11 +176,11 @@ function Navbar() {
           }
         }
 
-        @media (max-width: 950px) {
-          .header-feedback {
-            display: none;
-          }
-        }
+        // @media (max-width: 950px) {
+          // .header-feedback {
+          //   display: none;
+          // }
+        // }
       `}</style>
         </Container>
     );
