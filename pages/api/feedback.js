@@ -14,6 +14,7 @@ export default (request, response) => {
     const {
         body
     } = request
-    sendMessage(token, telegramUserId, body.toString())
+    const messageText = JSON.stringify(body)
+    sendMessage(token, telegramUserId, messageText)
     response.status(200).send(`Thank you for your feedback!`)
 }
