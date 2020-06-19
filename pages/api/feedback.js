@@ -7,7 +7,7 @@ function sendMessage(token, chat_id, text) {
     const params = {chat_id: parseInt(chat_id), text}
     console.log(params)
     axios
-        .get(baseUrl, params)
+        .get(baseUrl, {params})
         .then(resp => {
             console.log(resp.data)
         })
@@ -16,7 +16,7 @@ function sendMessage(token, chat_id, text) {
         });
 }
 
-export default (request, response) => {
+module.exports = (request, response) => {
     const {
         note = "Hey there! Simple response!", emotion = null
     } = request.body
