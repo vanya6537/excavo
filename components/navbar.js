@@ -49,26 +49,16 @@ function Navbar() {
                             <NextLogo/>
                         </a>
                     </Link>
-
-                    <Link href="/more">
+                    <Link href='/posts/first-post'>
                         <a
                             className={cn('mute', {
                                 selected: route.startsWith('/showcase')
                             })}
-                            title="Showcase"
+                            title="First Post"
                         >
-                            More
+                            First Post
                         </a>
-                    </Link>
 
-                    <Link href="/blog">
-                        <a
-                            className={cn('mute', {
-                                selected: route.startsWith('/blog')
-                            })}
-                        >
-                            Blog
-                        </a>
                     </Link>
 
                     {!isAmp && (
@@ -77,8 +67,8 @@ function Navbar() {
                         </div>
                     )}
                     <a
-                        href="https://github.com/vercel/next.js"
-                        aria-label="Next.js on GitHub"
+                        href="https://github.com/vanya6537/excavo"
+                        aria-label="Project on GitHub"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="icon mute"
