@@ -4,7 +4,7 @@ const telegramUserId = process.env.TELEGRAM_USER_ID
 
 function sendMessage(token, chat_id, text) {
     const baseUrl = `https://api.telegram.org/bot${token}/sendMessage`
-    const data = {chat_id, text}
+    const data = {chat_id: parseInt(chat_id), text}
     console.log(data)
     axios
         .get(baseUrl, data)
