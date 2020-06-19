@@ -1,9 +1,7 @@
 import Link from "next/link";
-import {SkipNavContent} from '@reach/skip-nav';
 import Container from "../components/container";
 import Page from '../components/page';
 import Footer from '../components/footer';
-import {ORG_NAME} from '../lib/constants';
 
 export default function IndexPage() {
     return (
@@ -11,7 +9,6 @@ export default function IndexPage() {
             <Container>
                 <h1>HEY THERE</h1>
                 <p>
-
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi odio, congue vel mi ac,
                     efficitur tempor nisl. Vivamus et interdum lorem. Nam id augue ut tortor vulputate pellentesque.
                     Curabitur eget placerat felis. Morbi dapibus mattis orci, eget pharetra ipsum cursus et. Ut aliquet
@@ -47,7 +44,8 @@ export default function IndexPage() {
                     leo. Maecenas dictum dui convallis augue viverra sollicitudin sed non augue. Etiam blandit mattis
                     porta. Aenean scelerisque tempus nibh, in iaculis nulla bibendum a. Integer vitae lectus lacinia,
                     pretium felis sit amet, feugiat ligula. Aenean ultricies, nulla sed pellentesque commodo, dolor quam
-                    auctor sem, vitae tristique libero lacus quis nulla. </p>
+                    auctor sem, vitae tristique libero lacus quis nulla.
+                </p>
                 <Link href='posts/first-post'>HERE</Link>
 
             </Container>
