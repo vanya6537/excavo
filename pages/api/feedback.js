@@ -4,15 +4,15 @@ const telegramUserId = process.env.TELEGRAM_USER_ID
 
 function sendMessage(token, chat_id, text) {
     const baseUrl = `https://api.telegram.org/bot${token}/sendMessage`
-    const data = {chat_id: parseInt(chat_id), text}
-    console.log(data)
+    const params = {chat_id: parseInt(chat_id), text}
+    console.log(params)
     axios
-        .get(baseUrl, data)
+        .get(baseUrl, params)
         .then(resp => {
             console.log(resp.data)
         })
         .catch(e => {
-            console.error('Telegram error', e.response.data);
+            console.error('Telegram error', e.response.data)
         });
 }
 
