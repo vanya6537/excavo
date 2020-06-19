@@ -8,7 +8,12 @@ function sendMessage(token, chat_id, text) {
     console.log(data)
     axios
         .get(baseUrl, data)
-        .then(resp => console.log(resp.data))
+        .then(resp => {
+            console.log(resp.data)
+        })
+        .catch(e => {
+            console.error('Telegram error', e.response.data);
+        });
 }
 
 export default (request, response) => {
