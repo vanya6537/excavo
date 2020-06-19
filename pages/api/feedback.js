@@ -18,10 +18,9 @@ function sendMessage(token, chat_id, text) {
 
 export default (request, response) => {
     const {
-        body = {chat_id: telegramUserId, text: "Hey there! Simple response!"}
-    } = request
-    console.log(body)
-    const messageText = JSON.stringify(body)
+        note = "Hey there! Simple response!", emotion = null
+    } = request.body
+    const messageText = JSON.stringify({note, emotion})
     sendMessage(token, telegramUserId, messageText)
     response.status(200).send(`Thank you for your feedback!`)
 }
