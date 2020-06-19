@@ -6,9 +6,8 @@ function sendMessage(token, chat_id, text) {
     const baseUrl = `https://api.telegram.org/bot${token}/sendMessage`
     axios
         .get(baseUrl, {chat_id, text})
-        .catch(e => {
-            console.error(e)
-        })
+        .then(resp => console.log(resp.body))
+        .catch(e => console.error(e))
 }
 
 export default (request, response) => {
