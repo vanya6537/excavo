@@ -8,6 +8,7 @@ import Container from './container';
 
 import GitHubLogo from './icons/github';
 import HeaderFeedback from './header-feedback';
+import {PLATFORM_NAME} from "../lib/constants";
 
 
 function Navbar() {
@@ -24,7 +25,7 @@ function Navbar() {
                 <div className="mobile-top">
                     <Link href="/">
                         <a className="mobile-logo" title="Go to the homepage" style={{color: "black"}}>
-                            <h1>Excavo Academy</h1>
+                            <h1>{PLATFORM_NAME}</h1>
                         </a>
                     </Link>
 
@@ -44,7 +45,7 @@ function Navbar() {
                 <div className="links">
                     <Link href="/">
                         <a className="logo" style={{color: "black"}}>
-                            <h1>Excavo Academy</h1>
+                            <h1>{PLATFORM_NAME}</h1>
                         </a>
                     </Link>
                     <Link href='/posts/first-post'>
