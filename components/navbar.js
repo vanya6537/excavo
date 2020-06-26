@@ -4,8 +4,6 @@ import {useRouter} from 'next/router';
 import {useAmp} from 'next/amp';
 import cn from 'classnames';
 import {SkipNavLink} from '@reach/skip-nav';
-
-import NextLogo from './logo';
 import Container from './container';
 
 import GitHubLogo from './icons/github';
@@ -25,8 +23,8 @@ function Navbar() {
             <nav className="f-reset">
                 <div className="mobile-top">
                     <Link href="/">
-                        <a className="mobile-logo" title="Go to the homepage">
-                            <NextLogo/>
+                        <a className="mobile-logo" title="Go to the homepage" style={{color: "black"}}>
+                            <h1>Excavo Academy</h1>
                         </a>
                     </Link>
 
@@ -45,8 +43,8 @@ function Navbar() {
 
                 <div className="links">
                     <Link href="/">
-                        <a className="logo">
-                            <NextLogo/>
+                        <a className="logo" style={{color: "black"}}>
+                            <h1>Excavo Academy</h1>
                         </a>
                     </Link>
                     <Link href='/posts/first-post'>
@@ -57,6 +55,17 @@ function Navbar() {
                             title="First Post"
                         >
                             First Post
+                        </a>
+
+                    </Link>
+                    <Link href='/posts/second-post'>
+                        <a
+                            className={cn('mute', {
+                                selected: route.startsWith('/showcase')
+                            })}
+                            title="Second Post"
+                        >
+                            Second Post
                         </a>
 
                     </Link>
