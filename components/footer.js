@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import {TWITTER_USER_NAME, ORG_NAME, PLATFORM_URL} from '../lib/constants';
+import {ORG_NAME, PLATFORM_NAME, PLATFORM_URL, TWITTER_USER_NAME} from '../lib/constants';
 import Container from './container';
 import withPure from './hoc/pure';
-import Logo from './icons/platform-logotype-black';
 
 export default withPure(() => (
     <Container wide gray>
@@ -117,7 +116,7 @@ export default withPure(() => (
                 </a>
               </p>
               <p>
-                <a href="https://github.com/vercel" rel="noopener noreferrer" target="_blank">
+                <a href="https://github.com/vanya6537/excavo" rel="noopener noreferrer" target="_blank">
                   GitHub
                 </a>
               </p>
@@ -139,8 +138,10 @@ export default withPure(() => (
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label={ORG_NAME}
+                style={{color: "black"}}
             >
-              <Logo/>
+              {/*<Logo/>*/}
+              <h1>{PLATFORM_NAME}</h1>
             </a>
             <div>
               Copyright © {`${new Date().getFullYear()}`} {ORG_NAME}, Inc. All rights reserved.
