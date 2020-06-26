@@ -108,7 +108,7 @@ export default withPure(() => (
                 </a>
               </p>
               <p>
-                <a href="https://github.com/vanya6537/vercel" rel="noopener noreferrer" target="_blank">
+                <a href="https://github.com/vercel" rel="noopener noreferrer" target="_blank">
                   GitHub
                 </a>
               </p>
