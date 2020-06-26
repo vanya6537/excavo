@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Container from "../../components/container";
 import Page from "../../components/page";
+import Footer from "../../components/footer";
 
 export default function FirstPost() {
     return (
@@ -52,6 +53,7 @@ export default function FirstPost() {
                     auctor sem, vitae tristique libero lacus quis nulla.
                 </p>
             </Container>
+            <Footer/>
         </Page>
     )
 }
