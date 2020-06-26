@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {ORG_NAME, PLATFORM_NAME, PLATFORM_URL, TWITTER_USER_NAME} from '../lib/constants';
+import {ORG_NAME, PLATFORM_NAME, PLATFORM_URL} from '../lib/constants';
 import Container from './container';
 import withPure from './hoc/pure';
 
@@ -64,34 +64,26 @@ export default withPure(() => (
             <div>
               <h4 className="fw5">General resources</h4>
               <p>
-                <a href="/docs">Docs</a>
-              </p>
-              <p>
-                <Link href="/learn/basics/create-nextjs-app" prefetch={false}>
-                  <a>Learn</a>
+                <Link href="http://excavo.io" prefetch={false}>
+                  <a>Main Website</a>
                 </Link>
               </p>
               <p>
-                <Link href="/showcase" prefetch={false}>
-                  <a>Showcase</a>
-                </Link>
-              </p>
-              <p>
-                <Link href="/blog" prefetch={false}>
-                  <a>Blog</a>
+                <Link href="http://quiz.excavo.io" prefetch={false}>
+                  <a>Excavo Trading Algorithm</a>
                 </Link>
               </p>
             </div>
             <div>
               <h4 className="fw5">More</h4>
               <p>
-                <a href="https://github.com/vercel/next.js" rel="noopener noreferrer" target="_blank">
+                <a href="https://github.com/vanya6537/excavo" rel="noopener noreferrer" target="_blank">
                   GitHub
                 </a>
               </p>
               <p>
                 <a
-                    href="https://github.com/vercel/next.js/releases"
+                    href="https://github.com/vanya6537/excavo/releases"
                     rel="noopener noreferrer"
                     target="_blank"
                 >
@@ -105,10 +97,10 @@ export default withPure(() => (
               </p>
             </div>
             <div>
-              <h4 className="fw5">About {ORG_NAME}</h4>
+              <h4 className="fw5">About Vercel</h4>
               <p>
                 <a
-                    href={`${PLATFORM_URL}/oss?utm_source=next-site&utm_medium=footer&utm_campaign=next-website`}
+                    href={`https://vercel.com/oss?utm_source=next-site&utm_medium=footer&utm_campaign=next-website`}
                     rel="noopener noreferrer"
                     target="_blank"
                 >
@@ -116,13 +108,13 @@ export default withPure(() => (
                 </a>
               </p>
               <p>
-                <a href="https://github.com/vanya6537/excavo" rel="noopener noreferrer" target="_blank">
+                <a href="https://github.com/vanya6537/vercel" rel="noopener noreferrer" target="_blank">
                   GitHub
                 </a>
               </p>
               <p>
                 <a
-                    href={`https://twitter.com/${TWITTER_USER_NAME}`}
+                    href={`https://twitter.com/vercel`}
                     rel="noopener noreferrer"
                     target="_blank"
                 >
