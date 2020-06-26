@@ -13,6 +13,7 @@ export default function FirstPost() {
                     </Link>
                 </h2>
                 <p>
+                    This is First Post!
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi odio, congue vel mi ac,
                     efficitur tempor nisl. Vivamus et interdum lorem. Nam id augue ut tortor vulputate pellentesque.
                     Curabitur eget placerat felis. Morbi dapibus mattis orci, eget pharetra ipsum cursus et. Ut aliquet
